@@ -32,7 +32,7 @@ pipeline {
                 bat 'docker rm -f bank-container 2>NUL'
 
                 echo 'Running Docker container...'
-                bat 'docker run -d -p 9090:8080 --name bank-container bank-app'
+                bat 'docker run -d -p 9090:8082 --name bank-container bank-app'
             }
         }
     }
